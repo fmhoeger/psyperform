@@ -30,7 +30,7 @@ Suggests:
     testthat
 Remotes:
   fmhoeger/psychTestR,
+  fmhoeger/MIQ
   klausfrieler/BDS,
   klausfrieler/JAJ,
-  fmhoeger/MIQ
 RoxygenNote: 7.1.0
