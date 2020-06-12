@@ -31,5 +31,6 @@ Suggests:
 Remotes:
   klausfrieler/BDS,
   klausfrieler/JAJ,
-  fmhoeger/MIQ
+  fmhoeger/MIQ,
+  fmhoeger/psychTestR
 RoxygenNote: 7.1.0
