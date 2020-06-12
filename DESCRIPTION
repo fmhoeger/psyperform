@@ -21,6 +21,7 @@ Imports:
     rlang (>= 0.4.1),
     rstudioapi (>= 0.10),
     tibble (>= 2.1.3),
+    psychTestR (>= 2.19.0),
     BDS (>= 0.1.0),
     JAJ (>= 0.1.3),
     MIQ (>= 1.0.0)
@@ -30,7 +31,7 @@ Suggests:
     testthat
 Remotes:
   fmhoeger/psychTestR,
-  fmhoeger/MIQ
+  fmhoeger/MIQ,
   klausfrieler/BDS,
-  klausfrieler/JAJ,
+  klausfrieler/JAJ
 RoxygenNote: 7.1.0
