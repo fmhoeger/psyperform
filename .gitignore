@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+
+output/sessions/*
+output/results/*
+output/deleted-results/*

@@ -1,5 +1,3 @@
-library(dplyr)
-
 #'
 #' This function lists all the conflicts between packages in psychTestPerformance
 #' and other packages that you have loaded.

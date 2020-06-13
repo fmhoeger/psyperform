@@ -4,9 +4,9 @@
 \name{psychTestPerformance-package}
 \alias{psychTestPerformance}
 \alias{psychTestPerformance-package}
-\title{psychTestPerformance: Collection of the LongGold PsychTestR performance tests and questionnaires}
+\title{psychTestPerformance: Collection of LongGold psychTestR performance tests}
 \description{
-Implementation of LongGold test battery consisting of a selection of performance tests and questionnaires based on the psychTestR library. Demos of the whole set of performance tests and questionnaires can be accessed at https://shiny.gold-msi.org/longgold_demo .
+Implementation of a LongGold test battery consisting of a selection of performance tests based on the psychTestR library. Demos of the whole set of performance tests, listening tests, and questionnaires can be accessed at https://shiny.gold-msi.org/longgold_demo.
 }
 \seealso{
 Useful links:

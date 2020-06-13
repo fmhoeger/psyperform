@@ -1,10 +1,10 @@
 Package: psychTestPerformance
 Type: Package
-Title: Collection of the LongGold psychTestR performance tests and questionnaires
+Title: Collection of LongGold psychTestR performance tests
 Version: 0.99.0
 Author: Frank Höger, Klaus Frieler
 Maintainer: Frank Höger <fmhoeger@mirsem.org>
-Description: Implementation of LongGold test battery consisting of a selection of performance tests and questionnaires based on the psychTestR library. Demos of the whole set of performance tests and questionnaires can be accessed at https://shiny.gold-msi.org/longgold_demo .
+Description: Implementation of a LongGold test battery consisting of a selection of performance tests based on the psychTestR library. Demos of the whole set of performance tests, listening tests, and questionnaires can be accessed at https://shiny.gold-msi.org/longgold_demo.
 License: MIT + file LICENSE
 URL: https://github.com/fmhoeger/psychTestPerformance
 BugReports: https://github.com/fmhoeger/psychTestPerformance/issues
@@ -13,25 +13,25 @@ LazyData: true
 Depends:
     R (>= 3.6.0)
 Imports:
-    cli (>= 1.1.0),
+    cli (>= 2.0.2),
     crayon (>= 1.3.4),
     dplyr (>= 1.0.0),
     magrittr (>= 1.5),
-    purrr (>= 0.3.3),
-    rlang (>= 0.4.1),
-    rstudioapi (>= 0.10),
-    tibble (>= 2.1.3),
-    psychTestR (>= 2.19.0),
+    purrr (>= 0.3.4),
+    rlang (>= 0.4.6),
+    rstudioapi (>= 0.11),
+    tibble (>= 3.0.1),
     BDS (>= 0.1.0),
     JAJ (>= 0.1.3),
-    MIQ (>= 1.0.0)
+    MIQ (>= 1.0.1)
 Suggests:
+    codetools,
     covr,
+    devtools,
     rmarkdown,
     testthat
 Remotes:
-  fmhoeger/psychTestR,
-  fmhoeger/MIQ,
   klausfrieler/BDS,
-  klausfrieler/JAJ
+  klausfrieler/JAJ,
+  fmhoeger/MIQ
 RoxygenNote: 7.1.0
