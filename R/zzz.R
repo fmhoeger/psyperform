@@ -4,11 +4,11 @@
     return()
 
   crayon::num_colors(TRUE)
-  psychTestPerformance_attach()
+  psyperform_attach()
 
   if (!"package:conflicted" %in% search()) {
-    x <- psychTestPerformance_conflicts()
-    msg(psychTestPerformance_conflict_message(x), startup = TRUE)
+    x <- psyperform_conflicts()
+    msg(psyperform_conflict_message(x), startup = TRUE)
   }
 
 }

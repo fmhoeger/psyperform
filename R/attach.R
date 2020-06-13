@@ -15,7 +15,7 @@ same_library <- function(pkg) {
   )
 }
 
-psychTestPerformance_attach <- function() {
+psyperform_attach <- function() {
   to_load <- core_unloaded()
   if (length(to_load) == 0)
     return(invisible())
@@ -23,7 +23,7 @@ psychTestPerformance_attach <- function() {
   msg(
     cli::rule(
       left = crayon::bold("Attaching packages"),
-      right = paste0("psychTestPerformance ", package_version("psychTestPerformance"))
+      right = paste0("psyperform ", package_version("psyperform"))
     ),
     startup = TRUE
   )

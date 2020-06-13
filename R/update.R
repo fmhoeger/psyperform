@@ -1,22 +1,22 @@
-#' Update psychTestPerformance packages
+#' Update psyperform packages
 #'
-#' This will check to see if all psychTestPerformance packages (and optionally, their
+#' This will check to see if all psyperform packages (and optionally, their
 #' dependencies) are up-to-date, and will install after an interactive
 #' confirmation.
 #'
-#' @inheritParams psychTestPerformance_deps
+#' @inheritParams psyperform_deps
 #' @export
 #' @examples
 #' \dontrun{
-#' psychTestPerformance_update()
+#' psyperform_update()
 #' }
-psychTestPerformance_update <- function(recursive = FALSE, repos = getOption("repos")) {
+psyperform_update <- function(recursive = FALSE, repos = getOption("repos")) {
 
-  deps <- psychTestPerformance_deps(recursive, repos)
+  deps <- psyperform_deps(recursive, repos)
   behind <- dplyr::filter(deps, behind)
 
   if (nrow(behind) == 0) {
-    cli::cat_line("All psychTestPerformance packages up-to-date")
+    cli::cat_line("All psyperform packages up-to-date")
     return(invisible())
   }
 
@@ -33,22 +33,22 @@ psychTestPerformance_update <- function(recursive = FALSE, repos = getOption("re
   invisible()
 }
 
-#' Get a situation report on the psychTestPerformance
+#' Get a situation report on the psyperform
 #'
 #' This function gives a quick overview of the versions of R and RStudio as
-#' well as all psychTestPerformance packages. It's primarily designed to help you get
+#' well as all psyperform packages. It's primarily designed to help you get
 #' a quick idea of what's going on when you're helping someone else debug
 #' a problem.
 #'
 #' @export
-psychTestPerformance_sitrep <- function() {
+psyperform_sitrep <- function() {
   cli::cat_rule("R & RStudio")
   if (rstudioapi::isAvailable()) {
     cli::cat_bullet("RStudio: ", rstudioapi::getVersion())
   }
   cli::cat_bullet("R: ", getRversion())
 
-  deps <- psychTestPerformance_deps()
+  deps <- psyperform_deps()
   package_pad <- format(deps$package)
   packages <- ifelse(
     deps$behind,
@@ -62,16 +62,16 @@ psychTestPerformance_sitrep <- function() {
   cli::cat_bullet(packages[!deps$package %in% core])
 }
 
-#' List all psychTestPerformance dependencies
+#' List all psyperform dependencies
 #'
 #' @param recursive If \code{TRUE}, will also list all dependencies of
-#'   psychTestPerformance packages.
+#'   psyperform packages.
 #' @param repos The repositories to use to check for updates.
 #'   Defaults to \code{getOptions("repos")}.
 #' @export
-psychTestPerformance_deps <- function(recursive = FALSE, repos = getOption("repos")) {
+psyperform_deps <- function(recursive = FALSE, repos = getOption("repos")) {
   pkgs <- utils::available.packages(repos = repos)
-  deps <- tools::package_dependencies("psychTestPerformance", pkgs, recursive = recursive)
+  deps <- tools::package_dependencies("psyperform", pkgs, recursive = recursive)
 
   pkg_deps <- unique(sort(unlist(deps)))
 

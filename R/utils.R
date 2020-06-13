@@ -1,6 +1,6 @@
 msg <- function(..., startup = FALSE) {
   if (startup) {
-    if (!isTRUE(getOption("psychTestPerformance.quiet"))) {
+    if (!isTRUE(getOption("psyperform.quiet"))) {
       packageStartupMessage(text_col(...))
     }
   } else {
@@ -24,20 +24,20 @@ text_col <- function(x) {
 
 }
 
-#' List all packages in the psychTestPerformance
+#' List all packages in the psyperform
 #'
-#' @param include_self Include psychTestPerformance in the list?
+#' @param include_self Include psyperform in the list?
 #' @export
 #' @examples
-#' psychTestPerformance_packages()
-psychTestPerformance_packages <- function(include_self = TRUE) {
-  raw <- utils::packageDescription("psychTestPerformance")$Remotes
+#' psyperform_packages()
+psyperform_packages <- function(include_self = TRUE) {
+  raw <- utils::packageDescription("psyperform")$Remotes
   remotes <- strsplit(raw, ",")[[1]]
   parsed <- gsub("^\\s+|\\s+$", "", remotes)
   names <- vapply(strsplit(parsed, "\\s+"), "[[", 1, FUN.VALUE = character(1))
 
   if (include_self) {
-    names <- c(names, "psychTestPerformance")
+    names <- c(names, "psyperform")
   }
 
   names
