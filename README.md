@@ -1,5 +1,5 @@
 # psyperform
-Collection of the LongGold psychTestR performance tests
+LongGold psychTestR performance tests
 
 
 # Manual installation of packages
@@ -12,5 +12,5 @@ remove.packages("JAJ")
 remove.packages("BDS")
 remove.packages("MIQ")
 remove.packages("psyperform")
-remove.packages("psychTestR")
 remove.packages("psychTestRCAT")
+remove.packages("psychTestR")

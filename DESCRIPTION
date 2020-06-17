@@ -1,10 +1,9 @@
 Package: psyperform
-Type: Package
-Title: Collection of LongGold psychTestR performance tests
+Title: LongGold psychTestR performance tests
 Version: 0.99.0
 Author: Frank Höger, Klaus Frieler
 Maintainer: Frank Höger <fmhoeger@mirsem.org>
-Description: Implementation of a LongGold test battery consisting of a selection of performance tests based on the psychTestR library. Demos of the whole set of performance tests, listening tests, and questionnaires can be accessed at https://shiny.gold-msi.org/longgold_demo.
+Description: Implementation of a LongGold test battery consisting of performance tests based on the psychTestR library. Demos of the whole set of performance tests, listening tests, and questionnaires can be accessed at https://shiny.gold-msi.org/longgold_demo.
 License: MIT + file LICENSE
 URL: https://github.com/fmhoeger/psyperform
 BugReports: https://github.com/fmhoeger/psyperform/issues

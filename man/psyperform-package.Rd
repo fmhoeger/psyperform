@@ -4,9 +4,9 @@
 \name{psyperform-package}
 \alias{psyperform}
 \alias{psyperform-package}
-\title{psyperform: Collection of LongGold psychTestR performance tests}
+\title{psyperform: LongGold psychTestR performance tests}
 \description{
-Implementation of a LongGold test battery consisting of a selection of performance tests based on the psychTestR library. Demos of the whole set of performance tests, listening tests, and questionnaires can be accessed at https://shiny.gold-msi.org/longgold_demo.
+Implementation of a LongGold test battery consisting of performance tests based on the psychTestR library. Demos of the whole set of performance tests, listening tests, and questionnaires can be accessed at https://shiny.gold-msi.org/longgold_demo.
 }
 \seealso{
 Useful links:
